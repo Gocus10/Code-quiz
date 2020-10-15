@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+  }
+  :root {
+    font-size: 62.5%;
+  }
+  body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  header{
+      display:flex;
+      justify-content: space-between;
+      margin: 2%;
+  }
+  header .high-score{
+      color:#cf03fc;
+  }
+  main{
+      margin-left: 10%;
+      margin-top: 5%;
+      display:flex;
+      justify-content: left;
+      width: 70%;
+  }
+  .btn{
+    color: white;
+    outline: none;
+    border: none;
+    display: inline-block;
+    padding: 10px 15px;
+    background: #682170;
+    font-size: 2.2rem;
+    border-radius: 12px;
+    position: relative;
+    top: -3px;
+    box-shadow: 0 3px var(--grey);
+  }
