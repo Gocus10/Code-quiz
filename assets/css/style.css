@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   :root {
     font-size: 62.5%;
@@ -11,22 +13,35 @@
       display:flex;
       justify-content: space-between;
       margin: 2%;
+      font-size: 1.5rem;
   }
   header .high-score{
       color:#cf03fc;
   }
+  .timer-area{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #timer{
+    margin-left: 8px;
+    font-weight: bolder;
+    font-size: 2rem;
+  }
   main{
       margin-left: 10%;
-      margin-top: 5%;
+      margin-right: 10%;
+      margin-top: 10%;
       display:flex;
-      justify-content: left;
-      width: 70%;
+      justify-content: center;
+      flex-wrap: wrap;
   }
   .btn{
     color: white;
     outline: none;
     border: none;
     display: inline-block;
+    margin-top: 20px;
     padding: 10px 15px;
     background: #682170;
     font-size: 2.2rem;
@@ -34,4 +49,22 @@
     position: relative;
     top: -3px;
     box-shadow: 0 3px var(--grey);
+  }
+  .home-screen-title{
+    display:inline-block;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    
+  }
+  .home-screen-text{
+    margin-top: 20px;
+    display:inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    
+  }
+  .question{
+    display:inline-block;
   }
