@@ -78,7 +78,7 @@ var questionHandler =function(){
   questionAreaEl.appendChild(subQEl);
 } 
 }
-//removes anything in the question-area
+//removes anything in the sub-question-area
 function deleteQ(){
     var pageElement = document.querySelector(".sub-question-area");
     pageElement.remove();
@@ -180,6 +180,8 @@ var buttonLeaveHandler = function(event) {
   }
 }
 function endGame(){
+  var subQEl = document.createElement("div");
+  subQEl.className="sub-question-area";
   var subEnd = document.createElement("div");
     subEnd.className = "sub-end-area";
     var endGameEl = document.createElement("div");
@@ -199,7 +201,8 @@ function endGame(){
     subEnd.appendChild(startGameText);
     subEnd.appendChild(endTxt);
     subEnd.appendChild(endInput);
-    questionAreaEl.appendChild(subEnd);
+    subQEl.appendChild(subEnd);
+    questionAreaEl.appendChild(subQEl);
 }
 function scoreScreen(){
   deleteQ();
