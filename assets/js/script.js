@@ -123,7 +123,7 @@ function hs(){
 var buttonHandler = function(event) {
   var targetEl = event.target;
   console.log(event.target);
-  if(targetEl.matches(".clearBtn")){Storage.clear()};
+  if(targetEl.matches(".clearBtn")){localStorage.clear()};
   if(targetEl.matches(".backBtn")){location.reload()};
   if(targetEl.matches("#link")){scoreScreen();}
   if(targetEl.matches("#sub")){hs();scoreScreen();}
